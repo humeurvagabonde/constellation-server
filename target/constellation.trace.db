@@ -1,0 +1,9 @@
+01-06 12:15:31 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTY" not found; SQL statement:
+/* named HQL query Party.findAll */ select party0_.id as id0_, party0_.creationDate as creation2_0_, party0_.name as name0_ from party party0_ [42102-170]
+01-06 12:16:37 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTY" not found; SQL statement:
+/* named HQL query Party.findAll */ select party0_.id as id0_, party0_.creationDate as creation2_0_, party0_.name as name0_ from party party0_ [42102-170]
+01-06 12:16:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "PARTY" not found; SQL statement:
+/* named HQL query Party.findAll */ select party0_.id as id0_, party0_.creationDate as creation2_0_, party0_.name as name0_ from party party0_ [42102-170]

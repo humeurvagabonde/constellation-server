@@ -1,0 +1,90 @@
+INFO  [2013-01-07 08:29:11,416] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+INFO  [2013-01-07 08:29:11,424] org.hibernate.Version: HHH000412: Hibernate Core {4.1.8.Final}
+INFO  [2013-01-07 08:29:11,425] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2013-01-07 08:29:11,426] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2013-01-07 08:29:11,453] com.yammer.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [org.humeurvagabonde.constellation.entities.Party]
+INFO  [2013-01-07 08:29:11,931] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+INFO  [2013-01-07 08:29:11,958] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2013-01-07 08:29:11,961] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2013-01-07 08:29:12,367] com.yammer.dropwizard.cli.ServerCommand: Starting Constellation - Milky-way
+ _____                 _       _ _       _   _             
+/  __ \               | |     | | |     | | (_)            
+| /  \/ ___  _ __  ___| |_ ___| | | __ _| |_ _  ___  _ __  
+| |    / _ \| '_ \/ __| __/ _ \ | |/ _` | __| |/ _ \| '_ \ 
+| \__/\ (_) | | | \__ \ ||  __/ | | (_| | |_| | (_) | | | |
+ \____/\___/|_| |_|___/\__\___|_|_|\__,_|\__|_|\___/|_| |_|
+                                                           
+                                                           
+
+INFO  [2013-01-07 08:29:12,368] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2013-01-07 08:29:12,473] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.15 10/30/2012 02:40 PM'
+INFO  [2013-01-07 08:29:12,529] com.yammer.dropwizard.config.Environment: 
+
+    GET     /party/{partyId} (org.humeurvagabonde.constellation.resources.PartyResource)
+
+INFO  [2013-01-07 08:29:12,529] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-01-07 08:29:12,795] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-01-07 08:29:12,797] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+INFO  [2013-01-07 08:30:49,659] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2013-01-07 08:30:49,660] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-01-07 08:30:49,662] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-01-07 08:30:49,663] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+WARN  [2013-01-07 08:30:51,763] org.eclipse.jetty.util.thread.QueuedThreadPool: 1 threads could not be stopped
+INFO  [2013-01-07 08:30:51,763] org.eclipse.jetty.util.thread.QueuedThreadPool: Couldn't stop Thread[qtp31485416-33,5,main]
+INFO  [2013-01-07 08:30:51,764] org.eclipse.jetty.util.thread.QueuedThreadPool:  at java.net.SocketInputStream.socketRead0(Native Method)
+INFO  [2013-01-07 08:30:51,765] org.eclipse.jetty.util.thread.QueuedThreadPool:  at java.net.SocketInputStream.read(SocketInputStream.java:129)
+INFO  [2013-01-07 08:30:51,765] org.eclipse.jetty.util.thread.QueuedThreadPool:  at org.eclipse.jetty.io.ByteArrayBuffer.readFrom(ByteArrayBuffer.java:375)
+INFO  [2013-01-07 08:30:51,765] org.eclipse.jetty.util.thread.QueuedThreadPool:  at org.eclipse.jetty.io.bio.StreamEndPoint.fill(StreamEndPoint.java:141)
+INFO  [2013-01-07 08:30:51,765] org.eclipse.jetty.util.thread.QueuedThreadPool:  at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.fill(SocketConnector.java:227)
+INFO  [2013-01-07 08:30:51,765] org.eclipse.jetty.util.thread.QueuedThreadPool:  at org.eclipse.jetty.http.HttpParser.fill(HttpParser.java:1035)
+INFO  [2013-01-07 08:30:51,765] org.eclipse.jetty.util.thread.QueuedThreadPool:  at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:280)
+INFO  [2013-01-07 08:30:51,765] org.eclipse.jetty.util.thread.QueuedThreadPool:  at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+INFO  [2013-01-07 08:30:51,765] org.eclipse.jetty.util.thread.QueuedThreadPool:  at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+INFO  [2013-01-07 08:30:51,765] org.eclipse.jetty.util.thread.QueuedThreadPool:  at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+INFO  [2013-01-07 08:30:51,765] org.eclipse.jetty.util.thread.QueuedThreadPool:  at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+INFO  [2013-01-07 08:30:51,765] org.eclipse.jetty.util.thread.QueuedThreadPool:  at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+INFO  [2013-01-07 08:30:51,765] org.eclipse.jetty.util.thread.QueuedThreadPool:  at java.lang.Thread.run(Thread.java:662)
+INFO  [2013-01-07 08:30:51,768] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-01-07 08:30:51,768] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-01-07 08:30:57,473] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+INFO  [2013-01-07 08:30:57,480] org.hibernate.Version: HHH000412: Hibernate Core {4.1.8.Final}
+INFO  [2013-01-07 08:30:57,481] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2013-01-07 08:30:57,483] org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+INFO  [2013-01-07 08:30:57,504] com.yammer.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [org.humeurvagabonde.constellation.entities.Party]
+INFO  [2013-01-07 08:30:57,947] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+INFO  [2013-01-07 08:30:57,970] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator: HHH000399: Using default transaction strategy (direct JDBC transactions)
+INFO  [2013-01-07 08:30:57,973] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2013-01-07 08:30:58,347] com.yammer.dropwizard.cli.ServerCommand: Starting Constellation - Milky-way
+ _____                 _       _ _       _   _             
+/  __ \               | |     | | |     | | (_)            
+| /  \/ ___  _ __  ___| |_ ___| | | __ _| |_ _  ___  _ __  
+| |    / _ \| '_ \/ __| __/ _ \ | |/ _` | __| |/ _ \| '_ \ 
+| \__/\ (_) | | | \__ \ ||  __/ | | (_| | |_| | (_) | | | |
+ \____/\___/|_| |_|___/\__\___|_|_|\__,_|\__|_|\___/|_| |_|
+                                                           
+                                                           
+
+INFO  [2013-01-07 08:30:58,347] org.eclipse.jetty.server.Server: jetty-8.y.z-SNAPSHOT
+INFO  [2013-01-07 08:30:58,445] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.15 10/30/2012 02:40 PM'
+INFO  [2013-01-07 08:30:58,498] com.yammer.dropwizard.config.Environment: 
+
+    GET     /party/{partyId} (org.humeurvagabonde.constellation.resources.PartyResource)
+
+INFO  [2013-01-07 08:30:58,498] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-01-07 08:30:58,761] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-01-07 08:30:58,763] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+DEBUG [2013-01-07 08:31:09,265] org.hibernate.SQL: /* named HQL query Party.findAll */ select party0_.id as id0_, party0_.creationDate as creation2_0_, party0_.name as name0_ from party party0_
+DEBUG [2013-01-07 08:31:16,885] org.hibernate.SQL: /* named HQL query Party.findAll */ select party0_.id as id0_, party0_.creationDate as creation2_0_, party0_.name as name0_ from party party0_
+INFO  [2013-01-07 11:05:13,925] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2013-01-07 11:05:13,926] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-01-07 11:05:13,928] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-01-07 11:05:13,928] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-01-07 11:05:15,983] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-01-07 11:05:15,984] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-01-07 11:05:16,037] org.eclipse.jetty.util.thread.ShutdownThread: shutdown already commenced
